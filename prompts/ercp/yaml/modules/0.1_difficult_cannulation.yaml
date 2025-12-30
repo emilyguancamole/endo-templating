@@ -1,0 +1,15 @@
+
+$extends: ../fields_base.yaml
+
+meta:
+  module_id: "0.2"
+  procedure_group: ercp
+  procedure_type: difficult_cannulation # output prompt file will be generated_{proc_type}_prompt.txt
+  title: ERCP Difficult Cannualtion
+
+#? When should this module be included?
+#? do i need to repeat prompt instructions, eg to write none/unknown
+activation_criteria: 
+
+field_groups:
+  
