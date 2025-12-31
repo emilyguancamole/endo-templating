@@ -4,20 +4,10 @@ $extends: ../fields_base.yaml
 meta:
   module_id: "0.2"
   procedure_group: ercp
-  procedure_type: stone_extraction # output prompt file will be generated_{proc_type}_prompt.txt
+  procedure_type: stone_extraction
   title: ERCP Stone Extraction
   insert_after: cholangiogram
 
-activation_criteria: 
-  # If stone/sludge extraction performed and/or adjuncts used: Refer to 0.2 Stone extraction adjuncts
-  # keywords: 
-  #   - "stone"
-  #   - "balloon sweep"
-  #   - "basket extraction"
-  #   - "lithotripsy"
-  # semantic_triggers:
-  #   - "extraction of stones from bile duct"
-  #   - "choledocholithiasis treatment"
 field_groups:
   initial_extraction:
     description: "Initial extraction method and result"

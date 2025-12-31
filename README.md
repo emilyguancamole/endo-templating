@@ -1,3 +1,4 @@
+## Setup Instructions
 Install Miniforge, which includes conda and mamba. We use conda (or mamba) to create an isolated environment for the project.
 ```
 # for mac:
@@ -21,7 +22,14 @@ Once you've activated, install required packages (they'll be installed in the co
 ```bash
 pip install -r requirements.txt
 ```
+## Edit YAML Files to construct fields + note templates
+1. Navigate to `prompts/ercp/yaml/modules/` folder.
+2. Open the base fields file `fields_base.yaml` to see common fields used across all modules.
+3. Create a specific module file (e.g. `0.2_stone_extraction.yaml` already exists) to see module-specific fields.
+4. Edit or add fields as needed, following the structure outlined in TechDetails.md.
+5. Save the YAML files after making changes.
 
+## Demo Instructions
 To see the resulting structure of the yaml files using DUMMY DATA, run the demo pipeline for ERCP procedure note generation.
 ```bash
 # keep --proc=ercp_base for ercp

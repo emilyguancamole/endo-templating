@@ -1,10 +1,13 @@
 # YAML/JINJA Notes 
-### Pipeline
+### General
 
 **ONE YAML FILE** → **Prompt + Template + Model**
 > fields.yaml  →  prompt.txt (for llm) + base.yaml (for drafter) + model.py (pydantic model)
 
 Each "0-module" should have its own YAML file with fields that are module-specific. These additional YAML files are merged into the base YAML file to create the final set of fields for that module.
+> Only 0.2 has been completed so far (stone extraction)
+
+`insert_after` in the metadata section indicates where the module's fields should be inserted into the base template. e.g. `insert_after: cholangiogram` means the module's fields will be inserted after the "cholangiogram" section in the base template.
 
 ### Field Groups + Definitions
 ```yaml
