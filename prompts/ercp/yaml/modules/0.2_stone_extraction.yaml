@@ -8,9 +8,6 @@ meta:
   title: ERCP Stone Extraction
   insert_after: cholangiogram
 
-#? When should this module be included?
-
-#? do i need to repeat prompt instructions, eg to write none/unknown
 activation_criteria: 
   # If stone/sludge extraction performed and/or adjuncts used: Refer to 0.2 Stone extraction adjuncts
   # keywords: 
@@ -21,7 +18,6 @@ activation_criteria:
   # semantic_triggers:
   #   - "extraction of stones from bile duct"
   #   - "choledocholithiasis treatment"
-
 field_groups:
   initial_extraction:
     description: "Initial extraction method and result"

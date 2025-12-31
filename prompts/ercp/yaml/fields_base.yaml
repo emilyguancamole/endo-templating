@@ -2,7 +2,6 @@
 # This is the BASE for all ERCP subtypes - defines common fields shared across all ERCPs
 
 # System-level instructions (shared by all ERCP subtypes)
-#TODO repeat some of these at the end of prompt
 system_instructions: |
   I am giving you a transcript from an ERCP procedure. The task is to extract procedure entities. 
   Make sure you are accurate and complete. The information you extract will be used to fill a structured procedure note template.
@@ -84,7 +83,7 @@ field_groups:
     fields:
       - name: medications
         type: string
-        prompt_instruction: "If specific medications are mentioned, include them with doses if available, else 'unknown"
+        prompt_instruction: "If specific medications are mentioned, include them with doses if available"
 
   monitoring:
     description: "Monitoring with default"
@@ -94,7 +93,7 @@ field_groups:
     fields:
       - name: monitoring
         type: string
-        prompt_instruction: "If the transcript describes monitoring, include details, else 'unknown'"
+        prompt_instruction: "If the transcript describes monitoring, include details"
 
   procedure_description:
     description: "Equipment and procedure specifics"
@@ -722,7 +721,7 @@ field_groups:
       - name: metal_biliary_type_features
         type: string
         prompt_instruction: "If metal stent placed, record features such as flared ends/anti-migration fins/retrieval lasso/tapered tip"
-#! check results of this prompt
+
       - name: metal_biliary_narrative
         type: string
         prompt_instruction: "If metal stent placed, describe its deployment in sentences in the following format, choosing the right findings for fields in square brackets []: 'Deployed [suprapapillary/transpapillary/intraductal above papilla across the [distal CBD stricture/mid CBD/hilar/anastomotic stricture/bile leak site]. Distal end was [2-3 mm beyond papilla/flush with papilla/5-10 mm into duodenum] and proximal end was [xx cm] into [CBD/CHD/right hepatic duct/left hepatic duct/above cystic duct take-off/below cystic duct take-off].'"
