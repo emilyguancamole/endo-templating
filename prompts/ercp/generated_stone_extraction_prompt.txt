@@ -16,8 +16,8 @@ past_medical_history: Describe past non-negative medical history as sentence(s)
 current_medications: Describe current medications as sentence(s)
 family_history: Describe family history as sentence(s)
 social_history: Describe social history as sentence(s) only if non-negative social history is mentioned
-medications: If specific medications are mentioned, include them with doses if available, else 'unknown
-monitoring: If the transcript describes monitoring, include details, else 'unknown'
+medications: If specific medications are mentioned, include them with doses if available
+monitoring: If the transcript describes monitoring, include details
 duodenoscope_type: duodenoscope type used, e.g. TJF-Q180V, TJF-Q190V, ED-530XT
 grade_of_ercp: ERCP difficulty grade as a integer (1, 2, 3, 4), or -1 if unknown
 pd_cannulation_status: pancreatic duct cannulation status, e.g. 'not attempted', 'successful', 'unsuccessful'

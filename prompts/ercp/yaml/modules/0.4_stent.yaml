@@ -2,7 +2,7 @@
 $extends: ../fields_base.yaml
 
 meta:
-  module_id: "0.2"
+  module_id: "0.4"
   procedure_group: ercp
   procedure_type: difficult_cannulation
   title: ERCP Difficult Cannulation
